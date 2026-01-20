@@ -17,6 +17,27 @@ public class TrackingEventRequest {
     private String deviceId;
 
     @Valid
-    @NotNull(message = "Event data is required")
-    private TrackingEventDataDTO data;
+    @NotNull(message = "Location is required")
+    private LocationDTO location;
+
+    @Valid
+    @NotNull(message = "Battery information is required")
+    private BatteryDTO battery;
+
+    @Valid
+    @NotNull(message = "Speed information is required")
+    private SpeedDTO speed;
+
+    @NotBlank(message = "Passcode is required")
+    private String passcode;
+
+    @NotBlank(message = "Lock status is required")
+    @JsonProperty("lock_status")
+    private String lockStatus;
+
+    @JsonProperty("event_type")
+    private String eventType;
+
+    @NotNull(message = "Timestamp is required")
+    private Long timestamp;
 }

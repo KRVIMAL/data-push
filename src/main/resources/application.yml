@@ -58,6 +58,6 @@ logging:
     root: INFO
     com.blinkit: DEBUG
     org.springframework.web: DEBUG
-    org.hibernate.SQL: DEBUG
+#    org.hibernate.SQL: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

@@ -41,6 +41,8 @@ public class ApiKeyAuthenticationFilter extends OncePerRequestFilter {
 
         String clientName = request.getHeader("x-client-name");
         String authToken = request.getHeader("authorization");
+        System.out.println(clientName+"clientname");
+        System.out.println(authToken+"authToken");
 
         if (clientName == null || authToken == null) {
             log.warn("Missing authentication headers from IP: {}", request.getRemoteAddr());

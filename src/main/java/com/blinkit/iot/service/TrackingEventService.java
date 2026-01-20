@@ -24,37 +24,35 @@ public class TrackingEventService {
 
     @Transactional
     public void processTrackingEvent(TrackingEventRequest request) {
-        log.debug("Processing tracking event for device: {}", request.getDeviceId());
+//        log.debug("Processing tracking event for device: {}", request.getDeviceId());
 
         TrackingEvent event = new TrackingEvent();
         event.setDeviceId(request.getDeviceId());
-        event.setLatitude(request.getData().getLocation().getLat());
-        event.setLongitude(request.getData().getLocation().getLon());
-        event.setProvider(request.getData().getLocation().getProvider());
-        event.setBatteryPercentage(request.getData().getBattery().getBatteryPercentage());
-        event.setIsCharging(request.getData().getBattery().getIsCharging());
-        event.setSpeedValue(request.getData().getSpeed().getValue());
-        event.setSpeedUnit(request.getData().getSpeed().getUnit());
-        event.setPasscode(request.getData().getPasscode());
-        event.setLockStatus(request.getData().getLockStatus());
-        event.setEventType(request.getData().getEventType() != null ? request.getData().getEventType() : "Normal");
-        event.setEventTimestamp(request.getData().getTimestamp());
+        event.setLatitude(request.getLocation().getLat());
+        event.setLongitude(request.getLocation().getLon());
+        event.setProvider(request.getLocation().getProvider());
+        event.setBatteryPercentage(request.getBattery().getBatteryPercentage());
+        event.setIsCharging(request.getBattery().getIsCharging());
+        event.setSpeedValue(request.getSpeed().getValue());
+        event.setSpeedUnit(request.getSpeed().getUnit());
+        event.setPasscode(request.getPasscode());
+        event.setLockStatus(request.getLockStatus());
+        event.setEventType(request.getEventType() != null ? request.getEventType() : "Normal");
+        event.setEventTimestamp(request.getTimestamp());
         event.setProcessed(false);
 
         trackingEventRepository.save(event);
 
-        // Update device status
         deviceService.updateDeviceStatus(
                 request.getDeviceId(),
-                request.getData().getPasscode(),
-                request.getData().getLockStatus(),
-                request.getData().getTimestamp()
+                request.getPasscode(),
+                request.getLockStatus(),
+                request.getTimestamp()
         );
 
         log.info("Tracking event saved for device: {} with event type: {}",
                 request.getDeviceId(), event.getEventType());
 
-        // Process abnormal events asynchronously
         if (event.getEventType() != null && !event.getEventType().equals("Normal")) {
             processAbnormalEvent(event);
         }
@@ -62,7 +60,7 @@ public class TrackingEventService {
 
     @Transactional
     public void processBulkTrackingEvents(BulkTrackingEventRequest request) {
-        log.debug("Processing bulk tracking events, count: {}", request.getData().size());
+//        log.debug("Processing bulk tracking events, count: {}", request.getData().size());
 
         List<TrackingEvent> events = new ArrayList<>();
 

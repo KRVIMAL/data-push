@@ -5,32 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f57f14d-33be-4777-9965-bac4b07a71c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/BlinkitIotApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/controller/DeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/controller/TrackingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/BatteryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/BulkEventItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/BulkTrackingEventRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/DeviceStatusResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/LocationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/SpeedDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/TrackingEventDataDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/TrackingEventRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/model/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/model/TrackingEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/repository/DeviceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/repository/TrackingEventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/security/ApiKeyAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/service/DeviceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/service/TrackingEventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/blinkit/iot/dto/TrackingEventRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/blinkit/iot/dto/TrackingEventRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/blinkit/iot/security/ApiKeyAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/blinkit/iot/security/ApiKeyAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/blinkit/iot/service/TrackingEventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/blinkit/iot/service/TrackingEventService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/TrackingEventRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/dto/TrackingEventRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/security/ApiKeyAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/security/ApiKeyAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/service/TrackingEventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blinkit/iot/service/TrackingEventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
